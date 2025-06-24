@@ -71,7 +71,7 @@
   <!-- Hero Section -->
   <section class="relative min-h-screen flex flex-col justify-center items-center text-center px-6 py-20 bg-[#c3c8b0] text-[#2e2e2e] bg-floral">
   <div class="absolute inset-0 z-0">
-  <img src="assets/bordo-lavanda-top.png" alt="Decorazione lavanda" class="w-full h-full object-cover blur-xs opacity-90">
+  <img src="assets/bordo-lavanda-top.png" alt="Decorazione lavanda" class="w-full max-h-40 sm:max-h-60 md:max-h-80 object-cover opacity-90 blur-sm">
 </div>
     <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold mb-4 text-[#6b2b91] fade-in-up">Dott.ssa Alexandra Diana Ciontu</h1>
     <p class="text-xl sm:text-2xl max-w-3xl fade-in-up" style="animation-delay: 0.3s; animation-fill-mode: both;"><strong>Psicologa clinica</strong> specializzanda in <strong>psicoterapia strategica integrata</strong>. Ti aiuto a superare ostacoli emotivi riscoprendo le tue risorse interiori.</p>
@@ -160,19 +160,19 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
       <div>
         <p class="text-lg leading-relaxed mb-6 fade-in-up" style="animation-delay: 0.2s;">
-          <strong>Lo studio</strong> e la <strong>relazione terapeutica</strong> rappresentano un <strong>ambiente sicuro</strong>, in cui ogni persona può sentirsi <strong>accolta</strong>, <strong>ascoltata</strong> e <strong>rispettata</strong> nei propri tempi e nel proprio vissuto.
+          <strong>Lo studio</strong> e la <strong>relazione terapeutica</strong> rappresentano un <strong>ambiente sicuro</strong>, in cui ogni persona può sentirsi <strong>accolta</strong>, <strong>ascoltata</strong> e <strong>rispettata</strong> nei propri tempi e nel proprio vissuto. Lo spazio terapeutico è pensato per essere un luogo protetto, dove è possibile sospendere il giudizio e aprirsi all’esplorazione di sé con serenità.
         </p>
         <p class="text-lg leading-relaxed fade-in-up" style="animation-delay: 0.4s;">
-          <strong>La terapia</strong> è un <strong>percorso condiviso</strong>, fondato su <strong>fiducia</strong>, <strong>presenza</strong> e <strong>rispetto dell’individualità</strong>. Se deciderai di intraprendere questo <strong>percorso</strong> con me sarò felice di accoglierti in studio, a <strong>Fiumicino</strong> e ad <strong>Ostia</strong>, oppure online per un <strong>incontro a distanza</strong>.
+          <strong>La terapia</strong> è un <strong>percorso condiviso</strong>, fondato su <strong>fiducia</strong>, <strong>presenza</strong> e <strong>rispetto dell’individualità</strong>. Se deciderai di intraprendere questo <strong>percorso</strong> con me sarò felice di accoglierti in studio, a <strong>Fiumicino</strong> e ad <strong>Ostia</strong>, oppure online per un <strong>incontro a distanza</strong>. Ogni incontro è costruito in base ai tuoi bisogni, con l’obiettivo di accompagnarti nella crescita personale e nel raggiungimento di un benessere autentico.
         </p>
       </div>
       <div class="space-y-10">
         <div class="fade-in-up" style="animation-delay: 0.6s;">
-          <img src="assets/studio-psicologa-fiumicino.jpeg" alt="Studio Fiumicino" class="w-full rounded-xl shadow-md mb-2">
+          <img src="assets/studio-psicologa-fiumicino.jpeg" alt="Studio Fiumicino" class="w-4/5 mx-auto rounded-xl shadow-md mb-2">
           <p class="text-base text-center font-semibold text-[#2e2e2e]">Studio di Fiumicino, Via Del Canale 18</p>
         </div>
         <div class="fade-in-up" style="animation-delay: 0.8s;">
-          <img src="assets/studio-psicologa-ostia.jpeg" alt="Studio Ostia" class="w-full rounded-xl shadow-md mb-2">
+          <img src="assets/studio-psicologa-ostia.jpeg" alt="Studio Ostia" class="w-4/5 mx-auto rounded-xl shadow-md mb-2">
           <p class="text-base text-center font-semibold text-[#2e2e2e]">Studio di Ostia, Viale Ammiraglio del Bono 63</p>
         </div>
       </div>
@@ -181,7 +181,7 @@
 </section>
 
   <!-- Contatti -->
-  <section id="contatti" class="px-6 py-20 bg-[#9bbf83] text-[#2e2e2e]">
+  <section id="contatti" class="px-6 py-20 bg-gradient-to-br from-[#a5c89c] to-[#cde5c2] text-[#2e2e2e]">
   <div class="max-w-4xl mx-auto text-center">
     <h2 class="text-3xl font-semibold mb-6 text-[#6b2b91] fade-in-up">Contatti</h2>
     <p class="mb-4 fade-in-up text-lg" style="animation-delay: 0.2s;">Ricevo in presenza negli studi di <strong>Fiumicino</strong> e <strong>Ostia</strong>, e anche online.</p>
@@ -202,10 +202,11 @@
   <footer class="px-6 py-6 bg-[#b5bda0] text-sm text-center">
     <p>&copy; 2025 Dott.ssa Alexandra Diana Ciontu - Psicologa. Tutti i diritti riservati.</p>
   </footer>
-<button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="fixed bottom-6 right-6 z-50 bg-[#6b2b91] text-white p-3 rounded-full shadow-lg hover:bg-[#5b2480] transition duration-300" aria-label="Torna su">
-  ↑
+<button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="fixed bottom-6 right-6 z-50 bg-[#6b2b91] text-white p-4 rounded-full shadow-2xl hover:bg-[#5b2480] transition duration-300 ring-2 ring-white ring-offset-2" aria-label="Torna su">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+  </svg>
 </button>
 
 </body>
 </html>
-
