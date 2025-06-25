@@ -87,6 +87,17 @@
     .fade-in-up {
       animation: fadeInUp 1s ease forwards;
     }
+    a.pulsante-animato {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+a.pulsante-animato:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+a.pulsante-animato:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
   </style>
 </head>
 <body class="bg-[#f1f0f5] text-[#333]">
@@ -98,8 +109,10 @@
     <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold mb-4 text-[#6b2b91] fade-in-up">Dott.ssa Alexandra Diana Ciontu</h1>
     <p class="text-xl sm:text-2xl max-w-3xl fade-in-up" style="animation-delay: 0.3s; animation-fill-mode: both;"><strong>Psicologa clinica</strong> specializzanda in <strong>psicoterapia strategica integrata</strong>. Ti aiuto a superare ostacoli emotivi riscoprendo le tue risorse interiori.</p>
     <div class="mt-6 flex flex-col sm:flex-row gap-4 fade-in-up" style="animation-delay: 0.6s; animation-fill-mode: both;">
-      <a href="https://www.guidapsicologi.it/studio/dottssa-alexandra-diana-ciontu" target="_blank" class="px-6 py-3 bg-[#6b2b91] text-white rounded-xl text-center">Prenota un colloquio</a>
-      <a href="#contatti" class="px-6 py-3 border border-[#6b2b91] text-[#6b2b91] rounded-xl text-center">Contattami</a>
+      <a href="https://www.guidapsicologi.it/studio/dottssa-alexandra-diana-ciontu" target="_blank" class="pulsante-animato px-6 py-3 bg-[#6b2b91] text-white rounded-xl text-center">Prenota un colloquio</a>
+
+<a href="#contatti" class="pulsante-animato px-6 py-3 border border-[#6b2b91] text-[#6b2b91] rounded-xl text-center">Contattami</a>
+
     </div>
   </section>
 
@@ -191,11 +204,11 @@
      <div class="relative overflow-hidden mt-[-30px]">
   <div class="flex transition-transform duration-500 ease-in-out" id="studio-slider">
     <div class="min-w-full">
-      <img src="assets/studio-psicologa-fiumicino.jpeg" alt="Studio Fiumicino" class="w-3/5 mx-auto rounded-xl shadow-md mb-2">
+      <img src="assets/studio-psicologa-fiumicino.jpeg" alt="Studio Fiumicino" class="w-4/5 mx-auto rounded-xl shadow-md mb-2">
       <p class="text-base text-center font-semibold text-[#2e2e2e]">Studio di Fiumicino, Via Del Canale 18</p>
     </div>
     <div class="min-w-full">
-      <img src="assets/studio-psicologa-ostia.jpeg" alt="Studio Ostia" class="w-3/5 mx-auto rounded-xl shadow-md mb-2">
+     <img src="assets/studio-psicologa-ostia.jpeg" alt="Studio Ostia" class="w-4/5 mx-auto rounded-xl shadow-md mb-2">
       <p class="text-base text-center font-semibold text-[#2e2e2e]">Studio di Ostia, Viale Ammiraglio del Bono 63</p>
     </div>
   </div>
@@ -225,16 +238,35 @@
     <h2 class="text-3xl font-semibold mb-6 text-[#6b2b91] fade-in-up">Contatti</h2>
     <p class="mb-4 fade-in-up text-lg" style="animation-delay: 0.2s;">Ricevo in presenza negli studi di <strong>Fiumicino</strong> e <strong>Ostia</strong>, e anche online.</p>
     <p class="mb-6 fade-in-up text-lg" style="animation-delay: 0.3s;">Prenota il tuo incontro <strong>inviandomi un messaggio</strong> o visita la mia pagina su <strong>Guida Psicologi</strong> e prendi un appuntamento.</p>
-    <div class="bg-white rounded-xl shadow-lg p-6 inline-block text-left fade-in-up" style="animation-delay: 0.4s;">
-      <ul class="space-y-2">
-        <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#6b2b91]" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" /></svg> <strong>Email:</strong> <a href="mailto:info@example.com" class="text-[#6b2b91] underline">info@example.com</a></li>
-        <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#6b2b91]" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.75C3 4.78 3.78 4 4.75 4h2.29c.53 0 1.04.21 1.41.59l1.12 1.12a1.996 1.996 0 01.25 2.59l-.7 1.05a1 1 0 00.21 1.32l4.96 3.72a1 1 0 001.32-.21l1.05-.7c.62-.42 1.45-.38 2.01.13l1.12 1.12c.38.38.59.89.59 1.41v2.29c0 .97-.78 1.75-1.75 1.75A16.25 16.25 0 013 5.75z" /></svg><strong>Telefono:</strong> <a href="tel:+391234567890" class="text-[#6b2b91] underline">+39 123 456 7890</a></li>
-      </ul>
-    </div>
-    <div class="mt-6 fade-in-up" style="animation-delay: 0.6s;">
-      <a href="https://www.guidapsicologi.it/studio/dottssa-alexandra-diana-ciontu" target="_blank" class="px-6 py-3 bg-[#6b2b91] text-white rounded-xl hover:bg-[#5b2480] transition">Prenota ora</a>
-    </div>
+   <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-6 fade-in-up" style="animation-delay: 0.4s;">
+  <div class="bg-white rounded-xl shadow-lg p-6 text-left">
+    <ul class="space-y-2">
+      <li class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#6b2b91]" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+        </svg> 
+        <strong>Email:</strong> <a href="mailto:info@example.com" class="text-[#6b2b91] underline">alexandra.ciontu.psi@gmail.com</a>
+      </li>
+      <li class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#6b2b91]" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M3 5.75C3 4.78 3.78 4 4.75 4h2.29c.53 0 1.04.21 1.41.59l1.12 1.12a1.996 1.996 0 01.25 2.59l-.7 1.05a1 1 0 00.21 1.32l4.96 3.72a1 1 0 001.32-.21l1.05-.7c.62-.42 1.45-.38 2.01.13l1.12 1.12c.38.38.59.89.59 1.41v2.29c0 .97-.78 1.75-1.75 1.75A16.25 16.25 0 013 5.75z" />
+        </svg>
+        <strong>Telefono:</strong> <a href="tel:+393275569910" class="text-[#6b2b91] underline">+39 327 556 9910</a>
+      </li>
+    </ul>
   </div>
+
+  <a href="https://wa.me/393275569910" target="_blank" class="pulsante-animato inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-xl hover:bg-[#1ebe5d] transition">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 448 512">
+      <path d="M380.9 97.1C339 55.2 283.1 32 224 32S109 55.2 67.1 97.1C25.2 139 2 194.9 2 254c0 45.4 14.7 87.6 41.2 122.5L0 480l105.3-43.6C140.4 452.5 181.5 464 224 464c59.1 0 115-23.2 156.9-65.1C422.8 356 446 300.1 446 241S422.8 126 380.9 97.1zM224 432c-38.8 0-76.1-11.4-108.1-32.9l-7.7-5-62.7 25.9L72 354.5l-5-7.7C45.4 314.1 32 285.2 32 254c0-106 86-192 192-192s192 86 192 192-86 192-192 192zm101.1-138.1l-30.4-8.7c-4.1-1.2-8.5-.1-11.5 2.7l-14.6 14.1c-27.9-14.7-51-37.8-65.7-65.7l14.1-14.6c2.8-3 3.9-7.4 2.7-11.5l-8.7-30.4c-2.4-8.3-11-13-19.3-10.6l-25.6 7.4c-7.2 2.1-12.2 8.6-12.2 16.1 0 89.8 72.9 162.7 162.7 162.7 7.5 0 14-5 16.1-12.2l7.4-25.6c2.4-8.3-2.3-16.9-10.6-19.3z"/>
+    </svg>
+    WhatsApp
+  </a>
+    
+<a href="https://www.guidapsicologi.it/studio/dottssa-alexandra-diana-ciontu" target="_blank" class="pulsante-animato inline-flex items-center gap-2 px-6 py-3 bg-[#6b2b91] text-white rounded-xl hover:bg-[#5b2480] transition">
+  Prenota ora
+</a>
+
 </section>
 
   <!-- Footer -->
