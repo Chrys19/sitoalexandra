@@ -49,9 +49,10 @@
     height: 100%;
     background-image: url('assets/lavanda-mobile.png');
     background-repeat: no-repeat;
-    background-position: top center;
+   background-position: 0 -30px; /* spostata leggermente più in alto */
     background-size: contain;
-    opacity: 0.75; /* leggera sfumatura */
+    background-attachment: fixed;
+    opacity: 0.88; /* meno sfumata, più visibile */
     z-index: 0; /* dietro al contenuto */
     pointer-events: none;
   }
@@ -59,9 +60,6 @@
   .hero-lavender > * {
     position: relative;
     z-index: 1;
-  }
-  .decorazione-angolo {
-  display: none;
   }
 }
     body {
@@ -101,12 +99,14 @@ a.pulsante-animato:active {
   transform: scale(0.97);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
-    .decorazione-angolo {
-  position: absolute;
-  width: 100px;
-  opacity: 0.8;
-  pointer-events: none;
-  z-index: 0;
+    @keyframes pulseBadge {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+}
+
+.badge-animated {
+  display: inline-block;
+  animation: pulseBadge 1.5s infinite;
 }
   </style>
 </head>
@@ -137,7 +137,6 @@ a.pulsante-animato:active {
 
   <!-- Metodo di lavoro -->
   <section class="px-6 py-16 bg-[#d3c3e6]">
-    <img src="assets/lavanda-angolo.png" alt="Decorazione lavanda" class="decorazione-angolo top-0 left-0">
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl font-semibold mb-6 text-[#6b2b91] fade-in-up">Metodo di lavoro</h2>
       <p class="mb-4 fade-in-up" style="animation-delay: 0.2s;">Il mio approccio si basa su un <strong>modello integrato</strong>, che unisce <strong>tecniche strategiche, cognitive e mindfulness</strong>. Ogni intervento è personalizzato e tiene conto della complessità emotiva e relazionale di chi si rivolge a me.</p>
@@ -245,7 +244,6 @@ a.pulsante-animato:active {
 
   <!-- Contatti -->
   <section id="contatti" class="px-6 py-20 bg-gradient-to-br from-[#a5c89c] to-[#cde5c2] text-[#2e2e2e]">
-    <img src="assets/lavanda-angolo.png" alt="Decorazione lavanda" class="decorazione-angolo bottom-0 right-0">
   <div class="max-w-4xl mx-auto text-center">
     <h2 class="text-3xl font-semibold mb-6 text-[#6b2b91] fade-in-up">Contatti</h2>
     <p class="mb-4 fade-in-up text-lg" style="animation-delay: 0.2s;">Ricevo in presenza negli studi di <strong>Fiumicino</strong> e <strong>Ostia</strong>, e anche online.</p>
@@ -272,11 +270,13 @@ a.pulsante-animato:active {
     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 448 512">
       <path d="M380.9 97.1C339 55.2 283.1 32 224 32S109 55.2 67.1 97.1C25.2 139 2 194.9 2 254c0 45.4 14.7 87.6 41.2 122.5L0 480l105.3-43.6C140.4 452.5 181.5 464 224 464c59.1 0 115-23.2 156.9-65.1C422.8 356 446 300.1 446 241S422.8 126 380.9 97.1zM224 432c-38.8 0-76.1-11.4-108.1-32.9l-7.7-5-62.7 25.9L72 354.5l-5-7.7C45.4 314.1 32 285.2 32 254c0-106 86-192 192-192s192 86 192 192-86 192-192 192zm101.1-138.1l-30.4-8.7c-4.1-1.2-8.5-.1-11.5 2.7l-14.6 14.1c-27.9-14.7-51-37.8-65.7-65.7l14.1-14.6c2.8-3 3.9-7.4 2.7-11.5l-8.7-30.4c-2.4-8.3-11-13-19.3-10.6l-25.6 7.4c-7.2 2.1-12.2 8.6-12.2 16.1 0 89.8 72.9 162.7 162.7 162.7 7.5 0 14-5 16.1-12.2l7.4-25.6c2.4-8.3-2.3-16.9-10.6-19.3z"/>
     </svg>
-    WhatsApp
+    WhatsApp <span class="badge-animated">💬</span>
+
   </a>
     
 <a href="https://www.guidapsicologi.it/studio/dottssa-alexandra-diana-ciontu" target="_blank" class="pulsante-animato inline-flex items-center gap-2 px-6 py-3 bg-[#6b2b91] text-white rounded-xl hover:bg-[#5b2480] transition">
-  Prenota ora
+  Prenota ora <span class="badge-animated">✔</span>
+
 </a>
 
 </section>
