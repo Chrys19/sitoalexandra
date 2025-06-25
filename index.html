@@ -60,6 +60,9 @@
     position: relative;
     z-index: 1;
   }
+  .decorazione-angolo {
+  display: none;
+  }
 }
     body {
       font-family: 'Inter', sans-serif;
@@ -98,6 +101,13 @@ a.pulsante-animato:active {
   transform: scale(0.97);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
+    .decorazione-angolo {
+  position: absolute;
+  width: 100px;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 0;
+}
   </style>
 </head>
 <body class="bg-[#f1f0f5] text-[#333]">
@@ -127,6 +137,7 @@ a.pulsante-animato:active {
 
   <!-- Metodo di lavoro -->
   <section class="px-6 py-16 bg-[#d3c3e6]">
+    <img src="assets/lavanda-angolo.png" alt="Decorazione lavanda" class="decorazione-angolo top-0 left-0">
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl font-semibold mb-6 text-[#6b2b91] fade-in-up">Metodo di lavoro</h2>
       <p class="mb-4 fade-in-up" style="animation-delay: 0.2s;">Il mio approccio si basa su un <strong>modello integrato</strong>, che unisce <strong>tecniche strategiche, cognitive e mindfulness</strong>. Ogni intervento è personalizzato e tiene conto della complessità emotiva e relazionale di chi si rivolge a me.</p>
@@ -234,6 +245,7 @@ a.pulsante-animato:active {
 
   <!-- Contatti -->
   <section id="contatti" class="px-6 py-20 bg-gradient-to-br from-[#a5c89c] to-[#cde5c2] text-[#2e2e2e]">
+    <img src="assets/lavanda-angolo.png" alt="Decorazione lavanda" class="decorazione-angolo bottom-0 right-0">
   <div class="max-w-4xl mx-auto text-center">
     <h2 class="text-3xl font-semibold mb-6 text-[#6b2b91] fade-in-up">Contatti</h2>
     <p class="mb-4 fade-in-up text-lg" style="animation-delay: 0.2s;">Ricevo in presenza negli studi di <strong>Fiumicino</strong> e <strong>Ostia</strong>, e anche online.</p>
