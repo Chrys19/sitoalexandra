@@ -49,11 +49,12 @@
     height: 100%;
     background-image: url('assets/lavanda-mobile.png');
     background-repeat: no-repeat;
-   background-position: 0 -40px; /* spostata leggermente più in alto */
+    background-position: 0 -40px;
     background-size: contain;
     background-attachment: fixed;
     z-index: 0;
     pointer-events: none;
+    opacity: 1 !important; /* 👈 Nessuna trasparenza */
   }
 
   .hero-lavender > * {
@@ -210,7 +211,7 @@ a.pulsante-animato:active {
           <strong>La terapia</strong> è un <strong>percorso condiviso</strong>, fondato su <strong>fiducia</strong>, <strong>presenza</strong> e <strong>rispetto dell’individualità</strong>. Se deciderai di intraprendere questo <strong>percorso</strong> con me sarò felice di accoglierti in studio, a <strong>Fiumicino</strong> e ad <strong>Ostia</strong>, oppure online per un <strong>incontro a distanza</strong>. Ogni incontro è costruito in base ai tuoi bisogni, con l’obiettivo di accompagnarti nella crescita personale e nel raggiungimento di un benessere autentico.
         </p>
       </div>
-     <div class="relative overflow-hidden mt-[-70px]">
+     <div class="relative overflow-hidden mt-[-80px]">
   <div class="flex transition-transform duration-500 ease-in-out" id="studio-slider">
     <div class="min-w-full">
       <img src="assets/studio-psicologa-fiumicino.jpeg" alt="Studio Fiumicino" class="w-4/5 mx-auto rounded-xl shadow-md mb-2">
