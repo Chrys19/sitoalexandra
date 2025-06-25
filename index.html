@@ -39,7 +39,7 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
   .hero-lavender::before {
     content: "";
     position: absolute;
@@ -49,16 +49,16 @@
     height: 100%;
     background-image: url('assets/lavanda-mobile.png');
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 80%;
-    opacity: 0.2;
-    z-index: 1;
+    background-position: top center;
+    background-size: contain;
+    opacity: 1;
+    z-index: 5;
     pointer-events: none;
   }
 
   .hero-lavender > * {
     position: relative;
-    z-index: 2;
+    z-index: 4;
   }
 }
     body {
