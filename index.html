@@ -107,15 +107,19 @@ a.pulsante-animato:active {
   display: inline-block;
   animation: pulseBadge 1.5s infinite;
 }
-.opacity-90 {
-    opacity: 0.7 !important;
+@media (max-width: 768px) {
+  .img-lavanda-hero {
+    opacity: 0.7;
+  }
+}
   </style>
 </head>
 <body class="bg-[#f1f0f5] text-[#333]">
   <!-- Hero Section -->
   <section class="relative min-h-screen flex flex-col justify-center items-center text-center px-6 py-20 bg-[#c3c8b0] text-[#2e2e2e] bg-floral hero-lavender">
   <div class="absolute inset-0 z-0">
-  <img src="assets/bordo-lavanda-top.png" alt="Decorazione lavanda" class="w-full h-full object-cover blur-sm opacity-60 md:blur-none md:opacity-100">
+  <img src="assets/bordo-lavanda-top.png" alt="Decorazione lavanda" class="w-full h-full object-cover blur-sm opacity-70 md:blur-none md:opacity-100">
+
 </div>
     <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold mb-4 text-[#6b2b91] fade-in-up">Dott.ssa Alexandra Diana Ciontu</h1>
     <p class="text-xl sm:text-2xl max-w-3xl fade-in-up" style="animation-delay: 0.3s; animation-fill-mode: both;"><strong>Psicologa clinica</strong> specializzanda in <strong>psicoterapia strategica integrata</strong>. Ti aiuto a superare ostacoli emotivi riscoprendo le tue risorse interiori.</p>
